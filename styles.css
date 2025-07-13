@@ -1,0 +1,367 @@
+/* General Styles */
+body {
+  background: url('bg2.png') no-repeat center center fixed;
+  color: #00ff00;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+  background-size: auto;  /* Remove zoom and keep the image's original size */
+  background-position: center center;  /* Ensure the image stays centered */
+  background-attachment: fixed; /* Keeps the background fixed in place */
+  
+}
+
+/* Basic Navigation Bar Styling */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(51, 51, 51, 0.6);
+  margin: 0;
+  padding: 10px 0;
+  border-radius: 5px; /* Rounded corners for the navigation bar */
+  flex-wrap: wrap; /* Allow the items to wrap for smaller screens */
+}
+
+/* Search Form Styling */
+.search-form {
+  margin-left: 20px; /* Space between the nav and search field */
+  display: flex;
+  align-items: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  gap: 10px;
+  flex-wrap: wrap; /* Ensures items wrap if space is limited */
+}
+
+.pagination a, .pagination span {
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.pagination a {
+  background-color: #333;
+  color: white;
+  transition: 0.3s;
+}
+
+.pagination a:hover {
+  background-color: #555;
+}
+
+.pagination span {
+  background-color: #222;
+  color: #fff;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  body {
+    background-size: auto;  /* Keep the image at original size */
+    background-repeat: repeat-y; /* Repeat image vertically */
+    background-position: top center; /* Align image to the top of the screen */
+  }
+
+  .pagination {
+      gap: 5px; /* Reduce spacing on smaller screens */
+  }
+
+  .pagination a, .pagination span {
+      padding: 8px 12px; /* Reduce padding for smaller buttons */
+      font-size: 14px; /* Adjust font size for readability */
+  }
+}
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 480px) {
+  body {
+    background-size: auto;  /* Keep the image at original size */
+    background-repeat: repeat-y; /* Repeat image vertically */
+    background-position: top center; /* Align image to the top of the screen */
+  }
+
+  .pagination {
+      flex-direction: column; /* Stack pagination links vertically */
+      align-items: center; /* Center items */
+  }
+
+  .pagination a, .pagination span {
+      width: 100px; /* Make buttons easier to tap */
+      text-align: center;
+  }
+}
+
+.search-input {
+  padding: 10px;  /* Increase padding for larger field */
+  margin-right: 10px;  /* Increase space between the input and button */
+  background-color: rgba(51, 51, 51, 0.6);
+  width: 300px;  /* Increase the width of the input field */
+  height: 9px;
+  border: 1px solid #d6ddd6;
+  color: #ccc;
+  border-radius: 5px;
+  font-size: 18px;  /* Increase font size */
+  margin-top: 10px;
+}
+
+.search-btn {
+  padding: 10px 15px;  /* Increase padding for a larger button */
+  background-color: #333;
+  color: rgb(47, 238, 9);
+  font-family: 'Courier New', Courier, monospace;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;  /* Increase font size of the button */
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.search-btn:hover {
+  background-color: #555;
+}
+
+/* List item styling */
+nav ul li {
+  margin: 0 20px; /* Increased space between items */
+  position: relative; /* To position underline effect */
+}
+
+/* Link Styling */
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px; /* Increased font size for better visibility */
+  padding: 10px 15px; /* Padding around the links */
+  transition: all 0.3s ease; /* Smooth transition for all effects */
+}
+
+/* Hover effects */
+nav ul li a:hover {
+  color: #00ff00; /* Change text color on hover */
+  text-decoration: none; /* Remove underline on hover */
+  background-color: #444; /* Add background color on hover */
+  border-radius: 5px; /* Rounded corners on hover */
+}
+
+/* Underline effect for hovered links */
+nav ul li a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #00ff00; /* Golden underline */
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover::before {
+  width: 100%; /* Underline expands on hover */
+}
+
+/* Mobile Responsive Styling */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Stack the menu items vertically */
+    align-items: center; /* Center the items */
+    padding: 15px; /* Adjust padding for better spacing */
+  }
+
+  nav ul li {
+    margin: 10px 0; /* Reduced margin for vertical stacking */
+  }
+
+  nav ul li a {
+    font-size: 18px; /* Slightly smaller font size for mobile */
+    padding: 12px 20px; /* Adjust padding for mobile */
+  }
+
+  .search-input {
+    padding: 10px;  /* Increase padding for larger field */
+    margin-right: 10px;  /* Increase space between the input and button */
+    background-color: rgba(51, 51, 51, 0.6);
+    width: 250px;  /* Increase the width of the input field */
+    height: 7px;
+    border: 1px solid #d6ddd6;
+    border-radius: 5px;
+    font-size: 18px;  /* Increase font size */
+    margin-top: 10px;
+  }
+
+  .search-btn {
+    padding: 10px 15px;  /* Increase padding for a larger button */
+    background-color: #333;
+    color: rgb(47, 238, 9);
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    font-size: 13px;  /* Increase font size of the button */
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+}
+
+/* For very small screens (e.g., phones in portrait mode) */
+@media (max-width: 480px) {
+  nav ul li a {
+    font-size: 16px; /* Further reduce font size for small screens */
+    padding: 10px 15px; /* Adjust padding */
+  }
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid #00ff00;
+}
+
+h1.glitch {
+  font-size: 3rem;
+  position: relative;
+  animation: glitch 2s infinite;
+}
+
+h1.glitch::before, h1.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+h1.glitch::before {
+  color: #ff00ff;
+  animation: glitch 3s infinite;
+}
+
+h1.glitch::after {
+  color: #00ffff;
+  animation: glitch 2s infinite;
+}
+
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #111;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Corner Borders */
+.card .corner-top-left,
+.card .corner-top-right,
+.card .corner-bottom-left,
+.card .corner-bottom-right {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #00ff00;
+}
+
+.card .corner-top-left {
+  top: 0;
+  left: 0;
+  border-right: none;
+  border-bottom: none;
+}
+
+.card .corner-top-right {
+  top: 0;
+  right: 0;
+  border-left: none;
+  border-bottom: none;
+}
+
+.card .corner-bottom-left {
+  bottom: 0;
+  left: 0;
+  border-right: none;
+  border-top: none;
+}
+
+.card .corner-bottom-right {
+  bottom: 0;
+  right: 0;
+  border-left: none;
+  border-top: none;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.card .price {
+  display: block;
+  font-size: 1.1rem;
+  color: #00ff00;
+  margin: 10px 0;
+}
+
+.buy-btn {
+  background-color: #00ff00;
+  text-decoration: none;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover {
+  background-color: #ff00ff;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  border-top: 2px solid #00ff00;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
