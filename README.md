@@ -21,8 +21,11 @@ This platform showcases the features and functionalities that might be found in 
 Here's a glimpse of what the SHADOWS Sci-Fi MARKET looks like:
 
 ![Screenshot of SHADOWS Sci-Fi MARKET](./screenshots/Screenshot(300).png)
+
 ![Screenshot of SHADOWS Sci-Fi MARKET](./screenshots/Screenshot(301).png)
+
 ![Screenshot of SHADOWS Sci-Fi MARKET](./screenshots/Screenshot(302).png)
+
 ![Screenshot of SHADOWS Sci-Fi MARKET](./screenshots/Screenshot(303).png)
 
 
@@ -31,3 +34,9 @@ Here's a glimpse of what the SHADOWS Sci-Fi MARKET looks like:
 **IMPORTANT: This project is for entertainment purposes only. It is not a real e-commerce platform, and no real-world transactions are supported.  Do not attempt to purchase or sell actual goods or services through this platform.**
 
 ## Technologies Used
+
+PHP
+HTML
+CSS
+JavaScript
+Ajax
