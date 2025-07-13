@@ -20,9 +20,10 @@ This platform showcases the features and functionalities that might be found in 
 
 Here's a glimpse of what the SHADOWS Sci-Fi MARKET looks like:
 
-![Screenshot of SHADOWS Sci-Fi MARKET](./screenshot.png)
+![Screenshot of SHADOWS Sci-Fi MARKET](./screenshots/Screenshot (300).png)
+![Screenshot of SHADOWS Sci-Fi MARKET](./screenshots/Screenshot (301).png)
+![Screenshot of SHADOWS Sci-Fi MARKET](./screenshots/Screenshot (302).png)
 
-*Replace `screenshot.png` with the actual path to your screenshot file within your repository.*
 
 ## Disclaimer
 
