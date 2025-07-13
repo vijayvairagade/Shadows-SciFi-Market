@@ -35,8 +35,8 @@ Here's a glimpse of what the SHADOWS Sci-Fi MARKET looks like:
 
 ## Technologies Used
 
-PHP
-HTML
-CSS
-JavaScript
-Ajax
+* PHP
+* HTML
+* CSS
+* JavaScript
+* Ajax
